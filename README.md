@@ -165,7 +165,7 @@ The relationship between `department` and `employee` is **one-to-many**:
 
 We can model the employee and department as separate entities
 as shown in the **Entity Relationship Diagram** (ERD) below.
-The edge represents the **one-to-many** relationship.
+The connecting line represents the **one-to-many** relationship.
 The three forked lines with the `*` represents the many side of the
 relationship (a department has many employees),
 while the single line with `1` represents the one side (an employee works in one department).
