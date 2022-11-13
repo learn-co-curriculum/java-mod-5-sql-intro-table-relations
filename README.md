@@ -346,6 +346,16 @@ have to consider how data in multiple tables can be related. Thankfully, in SQL,
 the way to relate multiple tables is by using **foreign keys**, so once you are comfortable with this concept, you'll be
 well on your way to mastering relational databases.
 
+
+- If the relationship is one-to-many, add a foreign key attribute to the table on the "many" side of the relationship.
+  - A department has many employees.  An employee works for one department.  Add the foreign key `department_id` in the `employee` table.
+- If the relationship is many-to-many, create a new table with the primary keys of each entity's table.
+  - A book has many authors.  An author writes many books.  Add a new table `book_author` with a composite primary key (book_id, author_id),
+    with each id being a foreign key to the corresponding table.
+- If the relationship is one-to-one, add a unique foreign key attribute in the table that represents the optional attributes.
+  - Some pets are fish.  A fish has physiology attributes.  Add unique foreign key `fish_id` in the `fish_physiology` table.
+
+
 ***
 
 
