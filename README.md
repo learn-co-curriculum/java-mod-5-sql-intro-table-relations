@@ -236,13 +236,20 @@ in another table is what an SQL `JOIN` statement will do for us!  We will explor
 
 Other examples of **one-to-many** relationships:
 
-- An album has many songs.  Each song is on one album.
-  The `song` table foreign key `album_id` references the `album` table primary key  `id`.      
-  ![song album erd](https://curriculum-content.s3.amazonaws.com/6036/introduction-to-table-relations/song_album.png)  
-- A passport is issued for a single person. A person may have many passports (i.e. dual citizenship, current vs expired).
-  The `passport` table foreign key `person_id` references the `person` table primary key `id`.    
-  ![passport person erd](https://curriculum-content.s3.amazonaws.com/6036/introduction-to-table-relations/person_passport.png)
 
+
+- A passport is issued for a single person. A person may have many passports (i.e. dual citizenship, current vs expired).  
+The `passport` table foreign key `person_id` references the `person` table primary key `id`.    
+
+![passport person erd](https://curriculum-content.s3.amazonaws.com/6036/introduction-to-table-relations/person_passport.png)
+
+
+- A customer can create multiple purchase orders.  Each purchase order is for one customer.  
+  The `purchase_order` table foreign key `customer_id` references the `customer` table primary key  `id`.
+- A purchase order may consist of several items.  Each purchase order item is for a single purchase order.  
+  The `purchase_order_item` table foreign key `purchase_order_id` references the `purchase_order` table primary key  `id`.
+
+![purchase order erd](https://curriculum-content.s3.amazonaws.com/6036/java-mod-5-intro-table-relations/purchase_order_erd.png)
 
 ## Many-To-Many Relationships
 
