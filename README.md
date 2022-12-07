@@ -118,14 +118,7 @@ Let's look at another example database that contains two tables: `employee`
 and `department`:
 
 
-<table>
-<tr>
-<th>Employee Table</th>
-<th>Department Table</th>
-</tr>
-
-<tr>
-<td>
+#### Employee Table
 
 | id  | first_name | last_name  | salary |
 |-----|------------|------------|--------|
@@ -135,20 +128,12 @@ and `department`:
 | 4   | Tal        | Oak        | 88000  |
 | 5   | Yuri       | Birch      | 150000 |
 
-</td>
-
-<td>
+#### Department Table
 
 | id  | name      | location   | employees |
 |-----|-----------|------------|-----------|
 | 1   | Payroll   | Building A | 4, 5      |
 | 2   | Marketing | Building B | 1, 2, 3   |
-
-</td>
-</tr>
-
-</table>
-
 
 - The `employee` table stores one row per employee, and each column stores an atomic value.
 - The `department` table stores the name and location, along with a comma-separated
@@ -262,15 +247,7 @@ Tables may also have **many-to-many** relationships.
 
 For example, assume we have the following `book` and `author` tables:
 
-<table>
-<tr>
-<th>Book table</th>
-<th>Author table</th>
-</tr>
-
-<tr>
-
-<td>
+#### Book table
 
 | id  | title                            | year | ISBN           |
 |-----|----------------------------------|------|----------------|
@@ -278,9 +255,7 @@ For example, assume we have the following `book` and `author` tables:
 | 2   | The Unix Programming Environment | 1983 | 978-0139376818 |
 | 3   | Unix, A History and Memoir       | 2019 | 978-1695978553 |
 
-</td>
-
-<td>
+#### Author table
 
 | id  | author              |
 |-----|---------------------|
@@ -288,9 +263,7 @@ For example, assume we have the following `book` and `author` tables:
 | 2   | Dennis M. Ritchie   |
 | 3   | Rob Pike            | 
 
-</td>
-</tr>
-</table>
+
 
 We need to be able to represent the following relationships between authors and books:
 
