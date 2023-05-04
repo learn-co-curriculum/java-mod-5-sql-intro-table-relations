@@ -201,7 +201,7 @@ FROM employee
 GROUP BY department_id
 ```
 
-The query result contains 2 rows since only 2 hotels have ratings of good or great:
+The query result contains 2 rows showing the number of employees in each department.
 
 ```text
 department_id   count 
